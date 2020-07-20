@@ -5,3 +5,7 @@ let info = function(message) {
 let error = function(message) {
   console.log('%c%s', 'color: red', message);
 }
+
+let warning = function(message) {
+  console.log('%c%s', 'color: orange', message);
+}
