@@ -18,6 +18,11 @@ clogger.error = function(message, background) {
   }
 }
 
-clogger.warning = function(message) {
-  console.log('%c%s', 'color: orange', message);
+clogger.warning = function(message, background) {
+  if (background == true) {
+    console.log('%c%s', 'color: white; background-color: orange', message);
+  }
+  else {
+    console.log('%c%s', 'color: orange', message);
+  }
 }
