@@ -9,8 +9,13 @@ clogger.info = function(message, background) {
   }
 }
 
-clogger.error = function(message) {
-  console.log('%c%s', 'color: red', message);
+clogger.error = function(message, background) {
+  if (background == true) {
+    console.log('%c%s', 'color: white; background-color: red', message);
+  } 
+  else {
+    console.log('%c%s', 'color: red', message);
+  }
 }
 
 clogger.warning = function(message) {
