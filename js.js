@@ -1,7 +1,7 @@
 let clogger = new Object();
 
 clogger.info = function(message, background) {
-  if (background == true) {
+  if (background === true) {
     console.log('%c%s', 'color: white; background-color: blue', message);
   }
   else {
@@ -10,7 +10,7 @@ clogger.info = function(message, background) {
 }
 
 clogger.error = function(message, background) {
-  if (background == true) {
+  if (background === true) {
     console.log('%c%s', 'color: white; background-color: red', message);
   } 
   else {
@@ -19,7 +19,7 @@ clogger.error = function(message, background) {
 }
 
 clogger.warning = function(message, background) {
-  if (background == true) {
+  if (background === true) {
     console.log('%c%s', 'color: white; background-color: orange', message);
   }
   else {
